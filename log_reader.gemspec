@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.authors = ["Paul Anthony McGowan"]
   spec.email = ["xhostcom@gmail.com"]
 
-  spec.summary = "Simple Log Parser"
+  spec.summary = "A Server Log Reader/Parser"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 

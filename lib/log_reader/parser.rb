@@ -21,5 +21,5 @@ module LogReader
     def aggregated_data 
       Aggregator.new(tokenized_data).group
     end
- end
+  end
 end

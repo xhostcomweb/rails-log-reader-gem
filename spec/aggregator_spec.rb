@@ -21,3 +21,4 @@ describe "#group" do
         expect(group.keys).to match_array(["/home", "/about"])
     end
 end
+end

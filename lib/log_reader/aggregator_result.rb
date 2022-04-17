@@ -8,4 +8,5 @@ module LogReader
     def sort_by_unique
     
     end
+end 
 end

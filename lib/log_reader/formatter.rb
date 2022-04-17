@@ -20,13 +20,13 @@ module LogReader
 
     def total_views
       @aggregator_result.sort_by_total_views.map do |path, accumulator| 
-        "#{path} #{accumulator.total} views\n"
+        "#{path} #{accumulator.total} views" + "\n"
       end
     end 
 
     def unique_views
       @aggregator_result.sort_by_unique_views.map do |path, accumulator|
-        "#{path} #{accumulator.unique} unique views\n"
+        "#{path} #{accumulator.unique} unique views" + "\n"
       end
     end
   end

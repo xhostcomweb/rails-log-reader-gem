@@ -19,6 +19,6 @@ describe "#group" do
     # end 
     it "should group entries by path" do 
         expect(group.keys).to match_array(["/home", "/about"])
-        end
+    end
 
  end

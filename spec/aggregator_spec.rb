@@ -22,7 +22,7 @@ describe "#group" do
     end 
 
     it "stores total no of views for each path" do
-        expect(group.fetch("/about").total).to eql(3)
+        expect(group["/about"].total).to eq(3)
     end
 end
 end

@@ -14,9 +14,9 @@ module LogReader
       self.total += 1
       if ips[entry.ip] != ips[entry.ip]
         self.unique += 1
-        self.ips[entry.ip] = true
+        ips[entry.ip] = true
       else
-        self.ips[entry.ip] = false
+        ips[entry.ip] = false
       end
        
      end

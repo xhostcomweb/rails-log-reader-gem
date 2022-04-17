@@ -26,4 +26,5 @@ RSpec.describe LogReader::Formatter do
    } 
 
    it { is_expected.to eql(expected_output) }
+end 
 end

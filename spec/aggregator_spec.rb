@@ -25,3 +25,4 @@ describe "#group" do
         expect(group.fetch("/about").total).to eql(3)
     end
 end
+end

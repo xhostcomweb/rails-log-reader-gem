@@ -4,7 +4,7 @@ RSpec.describe LogReader::AggregatorResult do
       { |variable| variable.path }.each_with_object(AggregatorResult.new) do |(path, entries), collection|
         collection[path] ||= Accumulator.new
         collection[path].add(entries)
-      end
+    end 
   }
 
 end

@@ -22,4 +22,6 @@ describe "~sort_by_total_views" do
         
         ]
     }
+
+    it { is_expected.to eq (expected_sorted_entries) }
 end

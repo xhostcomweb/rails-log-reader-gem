@@ -7,7 +7,7 @@ module LogReader
     end
 
     def format
-
+      
     end
   end
 end

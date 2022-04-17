@@ -7,7 +7,10 @@ module LogReader
     end
 
     def format
-    "Entries by total views:"
+   <<-EOF
+      Entries by total views: 
+      #{aggregator_result.total_views} 
+      EOF
     end 
     
     private 

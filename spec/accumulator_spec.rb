@@ -20,7 +20,7 @@ RSpec.describe LogReader::Accumulator do
         accumulator.ips["102.38.137.231"] = true
       end
 
-      it "should not change unique views" do
+      it "should not change unique no of views" do
         expect { add_entry }.to_not change { accumulator.unique }
       end
     end

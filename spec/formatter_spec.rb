@@ -9,5 +9,9 @@ RSpec.describe LogReader::Formatter do
    } 
    
    describe "#format" do 
-    subject { formatter.format}
+   subject { formatter.format} 
+
+   let(:expected_output) {
+
+   }
 end

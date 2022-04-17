@@ -17,7 +17,7 @@ describe "#group" do
     #it "should return a hash with 2 keys" do 
        # expect(group.keys.size).to eq(2)
     # end 
-    it "group entries by their path" do
+    it "should group entries by their path" do
       expect(group.keys).to match_array(["/about", "home"])
     end
 end

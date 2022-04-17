@@ -10,7 +10,7 @@ module LogReader
 
       def group 
          @entries.each_with_object({}) do |entry, collection|
-            collection[entry.path] = ["/home", "/about", "home", "about", "home"]
+            collection[entry.path] = "something"
            collection[entry.path] << entry
          end
       end

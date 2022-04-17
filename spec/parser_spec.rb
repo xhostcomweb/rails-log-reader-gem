@@ -1,5 +1,5 @@
 RSpec.describe LogReader::Parser do
-  let(:parser) { described_class.new("some/file") }
+  let(:parser) { described_class.new("somefile") }
 
   describe "#format" do
     subject { parser.format } 
@@ -9,7 +9,7 @@ RSpec.describe LogReader::Parser do
     } 
 
     before do 
-      allow(LogReader::FileReader).to receive("some/file").and_return(reader)
+      allow(LogReader::FileReader).to receive("somefile").and_return(reader)
     end
 
     it "returns a hash" do 

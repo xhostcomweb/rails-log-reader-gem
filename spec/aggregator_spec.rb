@@ -8,5 +8,13 @@ RSpec.describe LogReader::Aggregator do
          LogReader::Entry.new("about", "4.3.4.3"),
         LogReader::Entry.new("home", "8.3.4.3")
        ] 
-    }
-  let(:entry1) { LogReader::Entry.new("home", "
+    } 
+describe "#group" do 
+    subject(:group) { aggregator.group }
+    it "should return a hash" do 
+        expect(group).to be_a(Hash)
+    end
+    it "should return a hash with 2 keys" do 
+        expect(group.keys.size).to eq(2)
+    end
+ end

@@ -9,7 +9,7 @@ RSpec.describe LogReader::Parser do
     } 
 
     before do 
-      allow(LogReader::FileReader).to receive("somefile").and_return(reader)
+      allow(LogReader::FileReader).to receive("somefile").and_return(:reader)
     end
 
     it "returns a hash" do 

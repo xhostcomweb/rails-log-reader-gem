@@ -11,7 +11,7 @@ module LogReader
       def group 
          @entries.each_with_object({}) do |entry, collection|
             collection[entry.path] ||= Accumulator.new
-            collection[entry.path] << entry
+            collection[entry.path].add(entry)
          end
       end
    end

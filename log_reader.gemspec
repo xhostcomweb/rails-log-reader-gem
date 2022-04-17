@@ -9,6 +9,7 @@ Gem::Specification.new do |spec|
   spec.email = ["xhostcom@gmail.com"]
 
   spec.summary = "A Server Log Reader/Parser"
+  spec.homepage      = "https://www.xhostcom.com"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 

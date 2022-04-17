@@ -25,7 +25,7 @@ module LogReader
     end 
 
     def unique_views
-      @aggregator_result.sort_by_unique.map do |path, accumulator|
+      @aggregator_result.sort_by_unique_views.map do |path, accumulator|
         "#{path} #{accumulator.unique} unique visits"
       end.join("\n")
     end

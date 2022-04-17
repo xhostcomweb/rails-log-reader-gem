@@ -7,13 +7,13 @@ module LogReader
     end
 
     def format
-      <<-EOF
-      Entries by total views:
-      #{total_views}
+      <<~EOF
+        Entries by total views:
+        #{total_views}
 
-      Entries by unique views:
-      #{unique_views}
-      EOF
+        Entries by unique views:
+        #{unique_views}
+        EOF
     end
 
     private
@@ -21,13 +21,13 @@ module LogReader
     def total_views
       @aggregator_result.sort_by_total_views.map do |path, accumulator|
         "#{path} #{accumulator.total} views"
-      end
-    end 
+      end.join("\n")
+    end
 
     def unique_views
       @aggregator_result.sort_by_unique_views.map do |path, accumulator|
         "#{path} #{accumulator.unique} unique views"
-      end
+      end.join("\n")
     end
   end
 end

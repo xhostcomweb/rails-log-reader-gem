@@ -12,11 +12,11 @@ module LogReader
 
     def add(entry)
       self.total += 1
-      if ips[entry.ip] != ips[entry.ip]
+      if ips[entry.ip] == ips[entry.ip]
+        ips[entry.ip] = false
+      else
         self.unique += 1
         ips[entry.ip] = true
-      else
-        ips[entry.ip] = false
       end
        
      end

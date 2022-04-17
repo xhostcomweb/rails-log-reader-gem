@@ -2,8 +2,11 @@ RSpec.describe LogReader::Aggregator do
   let(:aggregator) { described_class.new(entries) }
   let(:entries) {
        [
-         LogReader::Entry.new("about", "4.3.4.3"),
-         LogReader::Entry.new("home", "8.3.4.3")
+      LogReader::Entry.new("/about", "1.2.2.2"),
+      LogReader::Entry.new("/about", "1.2.2.2"),
+      LogReader::Entry.new("/about", "2.2.2.2"),
+      LogReader::Entry.new("/home", "1.2.2.2"),
+      LogReader::Entry.new("/home", "1.2.2.2")
        ] 
     } 
 describe "#group" do 

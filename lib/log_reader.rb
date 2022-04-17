@@ -12,7 +12,6 @@ require_relative "log_reader/parser"
 
 module LogReader
   class Error < StandardError
-  
+
   end
-  # Your code goes here...
 end

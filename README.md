@@ -24,7 +24,11 @@ $ bin/console  to open Ruby console,
 
 > puts r
 
-##### Basic output from test log should be:
+##### Non technical people can also run the executive from bash shell in root folder:
+
+$ ./exe/log_reader ./server.log
+
+##### Basic output from test server.log should be:
 
 Entries by total views:
 

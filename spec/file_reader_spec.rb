@@ -5,7 +5,7 @@ RSpec.describe LogReader::FileReader do
   let(:path) { File.expand_path("fixtures/lines.log", __dir__) }
 
   describe "#lines" do
-    subject(:lines) { reader.lines }
+    subject(:lines) { reader.lines.to_a }
 
     let(:expected_lines) { ["line 1", "line 2", "line 3"] }
 

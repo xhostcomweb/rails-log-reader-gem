@@ -7,7 +7,7 @@ module LogReader
     end
 
     def lines
-      handle.each.map(&:chomp)
+      handle.each.lazy.map(&:chomp)
     end
 
     private

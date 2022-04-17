@@ -10,7 +10,7 @@ RSpec.describe LogReader::Tokenizer do
   end
 
   describe "#entries" do
-    subject { tokenizer.entries }
+    subject { tokenizer.entries.to_a }
 
     let(:expected_entries) do
       [

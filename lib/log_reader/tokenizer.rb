@@ -7,7 +7,7 @@ module LogReader
     end
 
     def entries
-      @lines.map do |line|
+      @lines.lazy.map do |line|
         Entry.new(*line.split)
       end
     end

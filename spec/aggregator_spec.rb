@@ -11,10 +11,13 @@ RSpec.describe LogReader::Aggregator do
     } 
 describe "#group" do 
     subject(:group) { aggregator.group }
-    it "should return a hash" do 
-        expect(group).to be_a(Hash)
-    end
-    it "should return a hash with 2 keys" do 
-        expect(group.keys.size).to eq(2)
-    end
+   # it "should return a hash" do 
+      #  expect(group).to be_a(Hash)
+    #end
+    #it "should return a hash with 2 keys" do 
+       # expect(group.keys.size).to eq(2)
+    # end 
+    it "should group entries by path" do 
+        
+
  end

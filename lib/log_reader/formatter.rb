@@ -18,6 +18,12 @@ module LogReader
     def total_views
       @aggregator_result.sort_by_total_views.map do |path, accumulator|
         "#{path} #{accumulator.total} visits"
+      end.join("\n") 
+    end 
+
+    def unique_views
+      @aggregator_result.sort_by_unique.map do |path, accumulator|
+        "#{path} #{accumulator.unique} unique visits"
       end.join("\n")
     end
   end

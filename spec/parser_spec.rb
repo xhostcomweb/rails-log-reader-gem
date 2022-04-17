@@ -4,6 +4,10 @@ RSpec.describe LogReader::Parser do
   describe "#format" do
     subject { parser.format } 
 
+    let(:reader) {
+      instance_double(LogReader::FileReader, lines: ["/about 1,1,1,1", "/contact 2.2.2.2", "/home 3.3.3.3"])
+    }
+
     it "returns a hash" do 
       expect(subject).to be_a(Hash)
     end 

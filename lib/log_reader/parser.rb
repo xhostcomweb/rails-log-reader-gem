@@ -10,7 +10,7 @@ module LogReader
     
     private 
 
-     def read_data 
+    def read_data 
       FileReader.new(@file_path).lines
     end 
 

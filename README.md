@@ -48,7 +48,7 @@ Entries by unique views:
 /deals 22 unique views                           
 /about 21 unique views     
 
-Much bigger log files can be used also.
+Much bigger log files can be used also, and is set up dependency injection for alteration for other input sources, ie databases etc.
 
 ## Installation
 

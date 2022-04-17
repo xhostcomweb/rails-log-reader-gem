@@ -11,7 +11,7 @@ module LogReader
       def group 
          @entries.each_with_object({}) do |entry, collection|
             collection[entry.path] = ["/home", "/about", "home", "about", "home"]
-           # collection[entry.path] << entry
+           collection[entry.path] << entry
          end
       end
    end

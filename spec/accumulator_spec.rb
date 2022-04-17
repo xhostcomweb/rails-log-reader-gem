@@ -7,15 +7,15 @@ RSpec.describe LogReader::Accumulator do
     subject(:add_entry) { accumulator.add(entry) }
     let(:entry) { LogReader::Entry.new("home", "102.38.137.231") }
 
-    it 'should "increments total views"' do
+    it 'should "increment total views"' do
       expect { add_entry }.to change { accumulator.total }.by(1)
     end
 
-    it 'should "increments unique views"' do
+    it 'should "increment unique views"' do
       expect { add_entry }.to change { accumulator.unique }.by(1)
     end
 
-    context "with existing entry ip" do
+    context "with an existing entry ip" do
       before do
         accumulator.ips["102.38.137.231"] = true
       end

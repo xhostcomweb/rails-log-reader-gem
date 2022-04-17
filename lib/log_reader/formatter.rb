@@ -7,13 +7,13 @@ module LogReader
     end
 
     def format
-   <<-EOF
-      Entries by total views: 
-      #{@aggregator_result.total_views} 
+      <<-EOF
+      Entries by total views:
+      #{total_views}
       EOF
-    end 
-    
-    private 
+    end
+
+    private
 
     def total_views
       @aggregator_result.sort_by_total_views.map do |path, accumulator|

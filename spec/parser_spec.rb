@@ -5,7 +5,7 @@ RSpec.describe LogReader::Parser do
     subject { parser.format } 
 
     it "returns a hash" do 
-
+      expect(subject).to be_a(Hash)
     end
   end
 end

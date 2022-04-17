@@ -15,6 +15,8 @@ describe "~sort_by_total_views" do
   subject { result.sort_by_total_views } 
 
   let(:expected_sorted_entries) { 
-      |variable|  
+        [
+            
+        ]
     }
 end

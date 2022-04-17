@@ -13,7 +13,7 @@ module LogReader
 
         Entries by unique views:
         #{unique_views}
-        EOF
+      EOF
     end
 
     private

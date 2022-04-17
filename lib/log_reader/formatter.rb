@@ -19,7 +19,7 @@ module LogReader
     private
 
     def total_views
-      @aggregator_result.sort_by_total_views.map do |path, accumulator| 
+      @aggregator_result.sort_by_total_views.map do |path, accumulator|
         "#{path} #{accumulator.total} views"
       end
     end 

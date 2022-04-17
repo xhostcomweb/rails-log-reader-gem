@@ -18,7 +18,7 @@ describe "#group" do
        # expect(group.keys.size).to eq(2)
     # end 
     it "should group entries by path" do 
-        expect(group.keys).to match_array(["/home", "/about"])
+        expect(group.keys).to match_array(["/home", "/about", "home", "about", "home"])
     end
 end
 end

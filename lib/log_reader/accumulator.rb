@@ -22,5 +22,4 @@ module LogReader
      end
       end
     end
-  end
-end
+

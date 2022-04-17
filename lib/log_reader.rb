@@ -5,7 +5,7 @@ require_relative "log_reader/file_reader"
 require_relative "log_reader/entry"
 require_relative "log_reader/tokenizer"
 require_relative "log_reader/accumulator"
-require_relative: "log_reader/aggregator"
+require_relative "log_reader/aggregator"
 
 module LogReader
   class Error < StandardError; end

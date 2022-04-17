@@ -5,7 +5,7 @@ module LogReader
     end
 
     def format
-
+      Formatter.new(aggregated_data).format
     end 
     
     private 

@@ -6,6 +6,8 @@ RSpec.describe LogReader::Parser do
 
     it "returns a hash" do 
       expect(subject).to be_a(Hash)
-    end
+    end 
+
+    it { is_expected.to include("Entries by total views") }
   end
 end

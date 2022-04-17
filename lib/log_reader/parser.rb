@@ -2,25 +2,28 @@
 
 module LogReader
   class Parser
-    def initialize(file_path)
-      @file_path = file_path
+    def initialize(input, options = {})
+      @input = input
+      @formatter = options[:formatter] || Formatter
+      @reader = options[:reader] || FileReader
+      @tokenizer = options[:tokenizer] || Tokenizer
     end
 
     def format
-      Formatter.new(aggregated_data).format
-    end 
-    
-    private 
+      @formatter.new(aggregated_data).format
+    end
 
-    def read_data 
-      FileReader.new(@file_path).lines
-    end 
+    private
 
-    def tokenized_data 
-      Tokenizer.new(read_data).entries
-    end 
+    def read_data
+      @reader.new(@input).lines
+    end
 
-    def aggregated_data 
+    def tokenized_data
+      @tokenizer.new(read_data).entries
+    end
+
+    def aggregated_data
       Aggregator.new(tokenized_data).group
     end
   end

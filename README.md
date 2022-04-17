@@ -1,12 +1,12 @@
 # LogReader
 
-Welcome to Paul Anthony McGowan' new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/log_reader`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to Paul Anthony McGowan' Log Reader gem! Ruby code, modules and class libraries for the gem is in the `lib/log_reader folder`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-###### Github repo 
+###### Github Repo 
 
 [https://github.com/xhostcomweb/ruby-log-reader-gem.git]
 
-* Gem Description: Server log parser to display paths and IP's by total number of page views and unique views in descending order, RSpec specification files in spec folder & the module and class library files in lib/log_reader folder. 
+* Gem Description: Server log parser to display paths and IP's by total number of page views and unique views in descending order, RSpec specification files are in spec folder. 
 
 ##### To run the RSpec tests run from bash terminal in gem root folder:
 
@@ -14,21 +14,21 @@ $ rspec
 
 The current spec tests should show green passed, 15 at time of writing.
 
-##### To test/view output of the test server log run from bash terminal in log_reader gem root folder:
+##### To test/view output of the test server.log in irb console, run from system bash or other shell in log_reader gem root folder:
 
 $ bin/console  to open Ruby console,
  
 ##### Then run the below console queries:
 
-> r = LogReader::Parser.new("server.log").format    (to read and format the test file, or place own file in root and adjust filename)
+> read = LogReader::Parser.new("server.log").format    (to read and format the test file, or place own file in root and adjust filename)
 
-> puts r
+> puts read
 
-##### Non technical people can also run the executive from bash shell in root folder:
+##### You Can also run the executive from the system bash or other shell in root folder:
 
 $ ./exe/log_reader ./server.log
 
-##### Basic output from test server.log should be:
+##### Output from the supplied test server.log should be:
 
 Entries by total views:
 
@@ -47,6 +47,8 @@ Entries by unique views:
 /support 23 unique views                         
 /deals 22 unique views                           
 /about 21 unique views     
+
+Much bigger log files can be used also.
 
 ## Installation
 

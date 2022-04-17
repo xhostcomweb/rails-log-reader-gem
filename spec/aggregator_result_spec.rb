@@ -17,9 +17,9 @@ describe "~sort_by_total_views" do
   let(:expected_sorted_entries) { 
         [
             
-          "/about" => accumulator1,
-          "/home" => accumulator2,
-          "/contact" => accumulator3
+          ["/about", => accumulator1],
+          ["/home", => accumulator2],
+          ["/contact", => accumulator3]
         ]
     }
 end

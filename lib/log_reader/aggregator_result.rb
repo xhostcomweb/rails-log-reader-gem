@@ -1,12 +1,12 @@
 module LogReader 
     class AggregatorResult < Hash
 
-    def sort_by_total
+      def sort_by_total
     
-    end 
+      end 
 
-    def sort_by_unique
+      def sort_by_unique
     
-    end
-end 
+      end
+  end 
 end

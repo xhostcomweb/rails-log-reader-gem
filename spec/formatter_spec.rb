@@ -6,5 +6,8 @@ RSpec.describe LogReader::Formatter do
       "/home" => instance_double(LogParser::Accumulator, unique: 10, total: 25),
       "/contact" => instance_double(LogParser::Accumulator, unique: 2, total: 140)
     ]
-   }
+   } 
+   
+   describe "#format" do 
+    subject { formatter.format}
 end

@@ -21,6 +21,7 @@ describe "#group" do
       expect(group.keys).to match_array(["/about","/home"])
     end 
 
-
-  end
+    it "stores total no of views for each path" do
+        expect(group.fetch("/about").total).to eql(3)
+    end
 end

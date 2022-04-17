@@ -12,7 +12,6 @@ RSpec.describe LogReader::Parser do
       allow(LogReader::FileReader).to receive(:new).and_return(reader)
     end
 
-
     it { is_expected.to include("Entries by total views") }
   end
 end

@@ -10,6 +10,9 @@ module LogReader
       <<-EOF
       Entries by total views:
       #{total_views}
+
+      Entries by unique views:
+      #{unique_views}
       EOF
     end
 

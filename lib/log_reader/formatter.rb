@@ -7,7 +7,11 @@ module LogReader
     end
 
     def format
-      
-    end
+    "Entries by total views:" + "\n" +
+    end 
+    
+    private 
+
+    
   end
 end

@@ -12,6 +12,16 @@ RSpec.describe LogReader::Formatter do
    subject { formatter.format} 
 
    let(:expected_output) {
-
+<<-EOF 
+        Entries by total views:
+        /contact 140 visits
+        /about 100 visits
+        /home 25 visits
+        
+        Entries by unique views:
+        /home 10 unique visits
+        /about 5 unique visits
+        /contact 2 unique visits
+    EOF
    }
 end

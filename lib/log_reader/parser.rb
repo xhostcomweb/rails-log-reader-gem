@@ -10,16 +10,16 @@ module LogReader
     
     private 
 
-    def aggregated_data 
-      Aggregator.new(tokenized_data).group
-    end
+     def read_data 
+      FileReader.new(@file_path).lines
+    end 
 
     def tokenized_data 
       Tokenizer.new(read_data).entries
     end 
 
-    def read_data 
-      FileReader.new(@file_path).lines
+    def aggregated_data 
+      Aggregator.new(tokenized_data).group
     end
-  end
+ end
 end

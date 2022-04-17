@@ -2,6 +2,4 @@
 
 module LogReader
   Entry = Struct.new(:path, :ip)
-
-  class_exec =
 end

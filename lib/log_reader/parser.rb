@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module LogReader
   class Parser
     def initialize(file_path)

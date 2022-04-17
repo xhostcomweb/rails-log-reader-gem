@@ -14,7 +14,7 @@ RSpec.describe LogReader::Formatter do
     subject { formatter.format }
 
     let(:expected_output) do
-      <<-EOF
+      <<~EOF
         Entries by total views:
         /contact 140 views
         /about 100 views
@@ -24,7 +24,7 @@ RSpec.describe LogReader::Formatter do
         /home 10 unique views
         /about 5 unique views
         /contact 2 unique views
-      EOF
+       EOF
     end
 
     it { is_expected.to eql(expected_output) }

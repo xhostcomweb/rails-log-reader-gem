@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 module LogReader
-   class Accumulator
+  class Accumulator
     attr_accessor :total, :unique, :ips
 
     def initialize
@@ -14,9 +14,8 @@ module LogReader
       self.total += 1
       unless ips[entry.ip]
         self.unique += 1
-        self.ips[entry.ip] = true
+        ips[entry.ip] = true
       end
     end
   end
-  end
-
+end

@@ -5,11 +5,11 @@ RSpec.describe LogReader::Parser do
     subject { parser.format } 
 
     let(:reader) {
-      instance_double(LogReader::FileReader, lines: ["/about 1,1,1,1", "/contact 2.2.2.2", "/home 3.3.3.3"])
+      instance_double(LogReader::FileReader, lines: ["/about 1,1,1,1", "/contact 2.2.2.2"])
     } 
 
     before do 
-      allow(LogReader::FileReader).to receive("somefile").and_return(:reader)
+      allow(LogReader::FileReader).to receive("somefile").and_return(reader)
     end
 
     it "returns a hash" do 

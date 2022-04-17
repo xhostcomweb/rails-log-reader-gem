@@ -1,8 +1,48 @@
 # LogReader
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/log_reader`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to Paul Anthony McGowan' new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/log_reader`. To experiment with that code, run `bin/console` for an interactive prompt.
 
-TODO: Delete this and the text above, and describe your gem
+###### Github repo 
+
+[https://github.com/xhostcomweb/ruby-log-reader-gem.git]
+
+* Gem Description: Server log parser to display paths and IP's by total number of page views and unique views in descending order, RSpec specification files in spec folder & the module and class library files in lib/log_reader folder. 
+
+##### To run the RSpec tests run from bash terminal in gem root folder:
+
+$ rspec
+
+The current spec tests should show green passed, 15 at time of writing.
+
+##### To test/view output of the test server log run from bash terminal in log_reader gem root folder:
+
+$ bin/console  to open Ruby console,
+ 
+##### Then run the below console queries:
+
+> r = LogReader::Parser.new("server.log").format    (to read and format the test file, or place own file in root and adjust filename)
+
+> puts r
+
+##### Basic output from test log should be:
+
+Entries by total views:
+
+/deals 90 views                                  
+/faq 89 views                                    
+/support 82 views                                
+/about 81 views                                  
+/products 80 views                               
+/home 78 views                                   
+                                                 
+Entries by unique views:  
+                       
+/products 23 unique views                        
+/faq 23 unique views                             
+/home 23 unique views                            
+/support 23 unique views                         
+/deals 22 unique views                           
+/about 21 unique views     
 
 ## Installation
 
@@ -16,7 +56,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ## Usage
 
-TODO: Write usage instructions here
+TODO: Pretty it up a little and any refactoring, error messages etc.
 
 ## Development
 

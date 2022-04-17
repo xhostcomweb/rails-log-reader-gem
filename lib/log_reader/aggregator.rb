@@ -5,6 +5,7 @@ module LogReader
       attr_accessor :total, :unique, :ips
 
       def initialize(entries) 
+        @entries = entries
       end
 
       def group 

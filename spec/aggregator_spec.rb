@@ -19,6 +19,10 @@ describe "#group" do
     end 
     it "should group entries by their path" do
       expect(group.keys).to match_array(["/home", "/about"])
+    end 
+
+    it "stores total views" do
+      expect(group.fetch("/about").total).to eql(3)
     end
   end
 end

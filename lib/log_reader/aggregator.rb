@@ -9,7 +9,7 @@ module LogReader
       end
 
       def group 
-         @entries.each_with_object(AggregatorResult) do |entry, collection|
+         @entries.each_with_object({}) do |entry, collection|
             collection[entry.path] ||= Accumulator.new
             collection[entry.path].add(entry)
          end
